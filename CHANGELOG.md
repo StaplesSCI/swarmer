@@ -1,1 +1,1 @@
-# See [Releases](https://github.com/gojuno/swarmer/releases)
+# See [Releases](https://github.com/StaplesSCI/swarmer/releases)

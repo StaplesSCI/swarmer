@@ -74,9 +74,9 @@ def pomConfig = {
     }
     developers {
         developer {
-            id 'gojuno'
-            name 'Juno Inc.'
-            email 'opensource@gojuno.com'
+            id 'StaplesSCI'
+            name 'Staples Supply Chain Innovation'
+            email 'stephen.nilsen@staples.com'
         }
     }
 }
@@ -89,7 +89,7 @@ publishing {
             artifact sourcesJar
             artifact javadocJar
 
-            groupId 'com.gojuno.swarmer'
+            groupId 'com.staplessci.swarmer'
             artifactId 'swarmer'
             version projectVersion()
 
@@ -97,7 +97,7 @@ publishing {
                 def root = asNode()
                 root.appendNode('description', 'Tool to create and start multiple Android Emulators in parallel.')
                 root.appendNode('name', 'Swarmer')
-                root.appendNode('url', 'https://github.com/gojuno/swarmer')
+                root.appendNode('url', 'https://github.com/StaplesSCI/swarmer')
                 root.children().last() + pomConfig
             }
         }
@@ -112,9 +112,10 @@ bintray {
     pkg {
         repo = 'maven'
         name = 'swarmer'
+        userOrg = 'staplessci'
         licenses = ['Apache-2.0']
-        vcsUrl = 'https://github.com/gojuno/swarmer.git'
-        issueTrackerUrl = 'https://github.com/gojuno/swarmer/issues'
+        vcsUrl = 'https://github.com/StaplesSCI/swarmer.git'
+        issueTrackerUrl = 'https://github.com/StaplesSCI/swarmer/issues'
         publications = ['SwarmerPublication']
 
         version {

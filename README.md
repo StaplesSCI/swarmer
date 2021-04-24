@@ -126,16 +126,16 @@ java -jar swarmer.jar stop --timeout 10
 
 ### Download
 
-Swarmer is [available on jcenter](https://jcenter.bintray.com/com/gojuno/swarmer).
+Swarmer is [available on Bintray](https://bintray.com/staplessci/maven/swarmer).
 
 >You can download it in your CI scripts or store it in your version control system (not recommended).
 
 ```console
 SWARMER_VERSION=some-version
-curl --fail --location https://jcenter.bintray.com/com/gojuno/swarmer/swarmer/${SWARMER_VERSION}/swarmer-${SWARMER_VERSION}.jar --output /tmp/swarmer.jar
+curl --fail --L https://staplessci.bintray.com/maven/com/staplessci/swarmer/swarmer/${SWARMER_VERSION}/swarmer-${SWARMER_VERSION}.jar --output /tmp/swarmer.jar
 ```
 
-All the releases and changelogs can be found on [Releases Page](https://github.com/gojuno/swarmer/releases).
+All the releases and changelogs can be found on [Releases Page](https://github.com/StaplesSCI/swarmer/releases).
 
 ### Composer
 
